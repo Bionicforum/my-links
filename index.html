@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мои ссылки</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f7f7f7; margin: 0; padding: 40px 20px; display: flex; flex-direction: column; align-items: center; }
+    .card { width: 100%; max-width: 560px; background: #fff; border-radius: 16px; padding: 28px; box-shadow: 0 6px 20px rgba(0,0,0,0.08); }
+    h1 { margin: 0 0 18px; font-size: 28px; text-align: center; }
+    p.note { margin: 0 0 22px; text-align: center; color: #666; font-size: 14px; }
+    .links { display: grid; gap: 12px; }
+    .btn { display: block; text-align: center; text-decoration: none; padding: 14px 16px; border-radius: 10px; font-weight: 600; border: 1px solid #ddd; }
+    .btn:hover { filter: brightness(0.97); }
+    .primary { background: #0d6efd; color: #fff; border-color: #0d6efd; }
+    footer { margin-top: 16px; text-align: center; color: #999; font-size: 12px; }
+    /* ===== Как редактировать =====
+       1) Меняйте href="..." и текст внутри <a> для своих ссылок.
+       2) Чтобы добавить кнопку — скопируйте любую строку <a class="btn ..."> и вставьте ниже.
+       3) Сохраните файл как index.html и загрузите на GitHub (Pages).
+    */
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Полезные ссылки</h1>
+    <p class="note">Нажми на кнопку — откроется нужная страница.</p>
+
+    <div class="links">
+      <!-- Пример готовой кнопки на ваш сайт -->
+      <a class="btn primary" href="https://bionicforum.github.io/BionicForum/" target="_blank" rel="noopener">Bionic Forum — главная</a>
+
+      <!-- Замените эти примеры своими ссылками -->
+      <a class="btn" href="https://example.com" target="_blank" rel="noopener">Ссылка 1 (заменить)</a>
+      <a class="btn" href="https://another.com" target="_blank" rel="noopener">Ссылка 2 (заменить)</a>
+      <a class="btn" href="mailto:you@example.com">Написать на почту (заменить)</a>
+      <a class="btn" href="https://t.me/your_username" target="_blank" rel="noopener">Телеграм (заменить)</a>
+    </div>
+
+    <footer>Редактируй этот список как тебе нужно.</footer>
+  </div>
+</body>
+</html>
