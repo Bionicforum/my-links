@@ -25,7 +25,7 @@
     }
 
     .logo-container img {
-      width: 800px; /* крупный логотип */
+      width: 500px; /* крупный логотип */
       max-width: 90%;
       height: auto;
       margin-top: 50px;
@@ -44,16 +44,17 @@
     .button-container {
       display: flex;
       flex-direction: column;
-      gap: 20px;
-      width: 350px;
+      gap: 25px;
+      width: 90%;
+      max-width: 400px;
       margin-bottom: 50px;
     }
 
     .button-card {
       background-color: rgba(255, 255, 255, 0.9);
-      border-radius: 15px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      padding: 30px; /* увеличил размер кнопки */
     }
 
     .button-card a {
@@ -61,7 +62,7 @@
       text-decoration: none;
       color: #FF4500; /* оранжево-красный текст */
       font-weight: bold;
-      font-size: 20px;
+      font-size: 22px; /* сделал текст крупнее */
       transition: color 0.3s;
     }
 
@@ -73,7 +74,7 @@
 <body>
   <!-- Логотип -->
   <div class="logo-container">
-    <img src="лого4.png">
+    <img src="лого4.png" alt="Логотип">
   </div>
 
   <!-- Название форума -->
@@ -85,7 +86,7 @@
   <!-- Кнопки -->
   <div class="button-container">
     <div class="button-card">
-      <a href="https://github.com/Bionicforum/BionicForum/edit/main/README.md" target="_blank">Інформація про форум</a>
+      <a href="https://github.com/Bionicforum/BionicForum/blob/main/README.md" target="_blank">Інформація про форум</a>
     </div>
     <div class="button-card">
       <a href="#">Наші спікери</a>
