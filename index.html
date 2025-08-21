@@ -1,102 +1,70 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <title>BionicForum Info</title>
-  <style>
-    html, body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-    }
-
-    body {
-      background-image: url('фон.png'); /* файл фона */
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      color: white;
-      text-align: center;
-    }
-
-    .logo-container img {
-      width: 500px; /* крупный логотип */
-      max-width: 90%;
-      height: auto;
-      margin-top: 50px;
-      margin-bottom: 20px;
-    }
-
-    .forum-title {
-      font-size: 28px;
-      font-weight: bold;
-      margin-bottom: 50px;
-      line-height: 1.4;
-      max-width: 1000px;
-      color: white;
-    }
-
-    .button-container {
-      display: flex;
-      flex-direction: column;
-      gap: 25px;
-      width: 90%;
-      max-width: 400px;
-      margin-bottom: 50px;
-    }
-
-    .button-card {
-      background-color: rgba(255, 255, 255, 0.9);
-      border-radius: 20px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-      padding: 30px; /* увеличил размер кнопки */
-    }
-
-    .button-card a {
-      display: block;
-      text-decoration: none;
-      color: #FF4500; /* оранжево-красный текст */
-      font-weight: bold;
-      font-size: 22px; /* сделал текст крупнее */
-      transition: color 0.3s;
-    }
-
-    .button-card a:hover {
-      color: #FF6347;
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>BionicForum Info</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('your-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+  }
+  .logo {
+    margin-top: 20px;
+  }
+  .logo img {
+    width: 360px;
+    max-width: 90%;
+    height: auto;
+  }
+  .title {
+    font-size: 22px;
+    margin: 20px 10px;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    margin-top: 30px;
+  }
+  .btn {
+    width: 80%;
+    max-width: 300px;
+    padding: 16px 0;
+    background: #fff;
+    color: #FF4500;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 12px;
+    text-decoration: none;
+  }
+  .btn:hover {
+    background: #ffd699;
+    color: #FF4500;
+  }
+</style>
 </head>
 <body>
-  <!-- Логотип -->
-  <div class="logo-container">
-    <img src="лого4.png" alt="Логотип">
-  </div>
 
-  <!-- Название форума -->
-  <div class="forum-title">
-    Міжнародний форум з реабілітації та декомпресії військових та людей з особливими потребами <br>
-    «Bionic Forum» Ukraine’s Rehabilitation & Reforms
-  </div>
+<div class="logo">
+  <img src="125a94ba-3953-4da3-a89d-7fb576393e5c.jpg" alt="Логотип">
+</div>
 
-  <!-- Кнопки -->
-  <div class="button-container">
-    <div class="button-card">
-      <a href="info.html">Інформація про форум</a>
-    </div>
-    <div class="button-card">
-      <a href="#">Наші спікери</a>
-    </div>
-    <div class="button-card">
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSd4zgoOz8slh014Fi2gUgaD5_DJYs9760382xNDuPuMjhkRQg/viewform" target="_blank">Реєстрація</a>
-    </div>
-    <div class="button-card">
-      <a href="#">Контакти</a>
-    </div>
-  </div>
+<div class="title">
+  Міжнародний форум з реабілітації та декомпресії військових та людей з особливими потребами «Bionic Forum» Ukraine’s Rehabilitation & Reforms
+</div>
+
+<div class="buttons">
+  <a href="info.html" class="btn">Інформація про форум</a>
+  <a href="#" class="btn">Наші спікери</a>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSd4zgoOz8slh014Fi2gUgaD5_DJYs9760382xNDuPuMjhkRQg/viewform" class="btn">Реєстрація</a>
+  <a href="#" class="btn">Контакти</a>
+</div>
+
 </body>
 </html>
