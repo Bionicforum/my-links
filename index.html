@@ -2,102 +2,90 @@
 <html lang="uk">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Мої посилання</title>
- <style>
-body {
-  margin: 0;
-  padding: 20px;
-  font-family: Arial, sans-serif;
-  text-align: center;
+  <title>Мій міні-сайт</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      text-align: center;
 
-  /* фон с картинкой */
-  background-image: url('125a94ba-3953-4da3-a89d-7fb576393e5c.jpg'); 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-</style>
+      background-image: url('125a94ba-3953-4da3-a89d-7fb576393e5c.jpg'); /* имя твоего файла с фоном */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
 
-    /* Логотип */
     .logo-container img {
-      max-width: 300px;
+      width: 300px; /* размер логотипа */
       height: auto;
       margin-bottom: 20px;
     }
 
-    /* Ссылка на главную */
-    .home-link a {
-      display: inline-block;
-      margin: 10px 0 30px;
-      font-size: 20px;
-      text-decoration: none;
+    h2 {
       color: #333;
+    }
+
+    .home-link a {
+      color: #333;
+      text-decoration: none;
       font-weight: bold;
     }
 
-    h2 {
-      margin-bottom: 20px;
-      color: #333;
-    }
-
-    /* Контейнер с карточками */
     .links-container {
       display: flex;
-      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 15px;
-      align-items: center;
+      margin-top: 20px;
     }
 
-    /* Карточка ссылки */
     .link-card {
+      display: inline-block;
       background-color: #fff;
       padding: 20px 30px;
       border-radius: 10px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      width: 300px;
+      width: 250px;
+      font-size: 18px;
+      text-align: center;
     }
 
     .link-card a {
       text-decoration: none;
       color: #007BFF;
-      font-size: 20px;
-      display: block;
+      font-weight: bold;
     }
 
     .link-card a:hover {
-      text-decoration: underline;
+      color: #0056b3;
     }
   </style>
 </head>
 <body>
-
-  <!-- Логотип -->
   <div class="logo-container">
     <img src="лого4.png" alt="Логотип">
   </div>
 
-  <!-- Ссылка на главную -->
+  <h2>Інформація</h2>
+
   <div class="home-link">
-    <a href="index.html">Головна</a>
+    <a href="#">Головна</a>
   </div>
 
-  <!-- Секция Информация -->
-  <h2>Інформація</h2>
   <div class="links-container">
     <div class="link-card">
-      <a href="https://example.com" target="_blank">посилання 1</a>
+      <a href="#">Посилання 1</a>
     </div>
     <div class="link-card">
-      <a href="https://example2.com" target="_blank">посилання 2</a>
+      <a href="#">Посилання 2</a>
     </div>
     <div class="link-card">
-      <a href="mailto:email@example.com" target="_blank">Пошта</a>
+      <a href="mailto:example@example.com">Пошта</a>
     </div>
     <div class="link-card">
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSd4zgoOz8slh014Fi2gUgaD5_DJYs9760382xNDuPuMjhkRQg/viewform" target="_blank">Реєстрація</a>
     </div>
   </div>
-
 </body>
 </html>
