@@ -1,53 +1,97 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BionicForum Links</title>
+  <title>Мої посилання</title>
   <style>
-    body { font-family: Arial, sans-serif; background: #f7f7f7; margin: 0; padding: 40px 20px; display: flex; flex-direction: column; align-items: center; }
-    .card { width: 100%; max-width: 560px; background: #fff; border-radius: 16px; padding: 28px; box-shadow: 0 6px 20px rgba(0,0,0,0.08); }
-    h1 { margin: 0 0 18px; font-size: 28px; text-align: center; }
-    p.note { margin: 0 0 22px; text-align: center; color: #666; font-size: 14px; }
-    .links { display: grid; gap: 12px; }
-    .btn { display: block; text-align: center; text-decoration: none; padding: 14px 16px; border-radius: 10px; font-weight: 600; border: 1px solid #ddd; }
-    .btn:hover { filter: brightness(0.97); }
-    .primary { background: #0d6efd; color: #fff; border-color: #0d6efd; }
-    footer { margin-top: 16px; text-align: center; color: #999; font-size: 12px; }
-    /* ===== Как редактировать =====
-       1) Меняйте href="..." и текст внутри <a> для своих ссылок.
-       2) Чтобы добавить кнопку — скопируйте любую строку <a class="btn ..."> и вставьте ниже.
-       3) Сохраните файл как index.html и загрузите на GitHub (Pages).
-    */
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 20px;
+    }
+
+    /* Логотип */
+    .logo-container img {
+      max-width: 150px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    /* Ссылка на главную */
+    .home-link a {
+      display: inline-block;
+      margin: 10px 0 30px;
+      font-size: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    /* Контейнер с карточками */
+    .links-container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+    }
+
+    /* Карточка ссылки */
+    .link-card {
+      background-color: #fff;
+      padding: 15px 25px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      width: 250px;
+    }
+
+    .link-card a {
+      text-decoration: none;
+      color: #007BFF;
+      font-size: 18px;
+      display: block;
+    }
+
+    .link-card a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h2>Інформація</h2>
 
-<div class="links-container">
-  <div class="link-card">
-    <a href="https://example.com" target="_blank">посилання 1</a>
+  <!-- Логотип -->
+  <div class="logo-container">
+    <img src="logo.png" alt="Логотип">
   </div>
 
-  <div class="link-card">
-    <a href="https://example2.com" target="_blank">посилання 2</a>
+  <!-- Ссылка на главную -->
+  <div class="home-link">
+    <a href="index.html">Головна</a>
   </div>
 
-  <div class="link-card">
-    <a href="mailto:email@example.com" target="_blank">Пошта</a>
+  <!-- Секция Информация -->
+  <h2>Інформація</h2>
+  <div class="links-container">
+    <div class="link-card">
+      <a href="https://example.com" target="_blank">посилання 1</a>
+    </div>
+    <div class="link-card">
+      <a href="https://example2.com" target="_blank">посилання 2</a>
+    </div>
+    <div class="link-card">
+      <a href="mailto:email@example.com" target="_blank">Пошта</a>
+    </div>
+    <div class="link-card">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSd4zgoOz8slh014Fi2gUgaD5_DJYs9760382xNDuPuMjhkRQg/viewform" target="_blank">Реєстрація</a>
+    </div>
   </div>
 
-  <div class="link-card">
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd4zgoOz8slh014Fi2gUgaD5_DJYs9760382xNDuPuMjhkRQg/viewform" target="_blank">Реєстрація</a>
-  </div>
-</div>
-
-<!-- Верхняя ссылка на главную -->
-<div class="home-link">
-  <a href="index.html">Головна</a>
-</div>
-
-  </div>
 </body>
 </html>
