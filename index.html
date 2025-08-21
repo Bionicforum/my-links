@@ -8,14 +8,11 @@
       height: 100%;
       margin: 0;
       padding: 0;
+      font-family: Arial, sans-serif;
     }
 
     body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 20px;
-
-      /* фон */
+      /* Фон на весь экран */
       background-image: url('фон.png'); /* твой файл фона */
       background-size: cover;
       background-position: center;
@@ -25,48 +22,55 @@
       flex-direction: column;
       align-items: center;
       justify-content: flex-start;
-    }
 
-    /* Логотип */
-    .logo-container img {
-      width: 1500px; /* увеличиваем раз в 5 */
-      max-width: 90%; /* чтобы не вылазил за экран на маленьких устройствах */
-      height: auto;
-      margin-bottom: 20px;
-    }
-
-    /* Название форума */
-    .forum-title {
       color: white;
-      font-size: 40px;
+      text-align: center;
+    }
+
+    /* Логотип сверху */
+    .logo-container img {
+      width: 500px; /* крупный логотип */
+      max-width: 90%;
+      height: auto;
+      margin-top: 50px;
+      margin-bottom: 30px;
+    }
+
+    /* Название форума под логотипом */
+    .forum-title {
+      font-size: 32px;
       font-weight: bold;
       margin-bottom: 50px;
       line-height: 1.3;
       max-width: 1000px;
     }
 
-    /* Кнопки */
+    /* Контейнер кнопок */
     .button-container {
       display: flex;
       flex-direction: column;
       gap: 20px;
-      width: 300px; /* ширина кнопок */
+      width: 350px;
     }
 
-    .button-container a {
+    /* Карточки кнопок */
+    .button-card {
+      background-color: rgba(255, 255, 255, 0.9); /* белый блок поверх фона */
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      padding: 20px;
+    }
+
+    .button-card a {
       display: block;
-      padding: 15px 20px;
-      background-color: white;
-      color: #FF4500; /* оранжево-красный */
-      font-weight: bold;
       text-decoration: none;
-      border-radius: 10px;
-      font-size: 18px;
-      transition: all 0.3s ease;
+      color: #FF4500; /* оранжево-красный текст */
+      font-weight: bold;
+      font-size: 20px;
+      transition: color 0.3s;
     }
 
-    .button-container a:hover {
-      background-color: #FFDAB9; /* чуть светлее при наведении */
+    .button-card a:hover {
       color: #FF6347;
     }
   </style>
@@ -83,12 +87,20 @@
     «Bionic Forum» Ukraine’s Rehabilitation & Reforms
   </div>
 
-  <!-- Вертикальные кнопки -->
+  <!-- Кнопки поверх фона -->
   <div class="button-container">
-    <a href="https://github.com/Bionicforum/BionicForum/edit/main/README.md" target="_blank">Інформація про форум</a>
-    <a href="#">Наші спікери</a>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd4zgoOz8slh014Fi2gUgaD5_DJYs9760382xNDuPuMjhkRQg/viewform" target="_blank">Реєстрація</a>
-    <a href="#">Контакти</a>
+    <div class="button-card">
+      <a href="https://github.com/Bionicforum/BionicForum/edit/main/README.md" target="_blank">Інформація про форум</a>
+    </div>
+    <div class="button-card">
+      <a href="#">Наші спікери</a>
+    </div>
+    <div class="button-card">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSd4zgoOz8slh014Fi2gUgaD5_DJYs9760382xNDuPuMjhkRQg/viewform" target="_blank">Реєстрація</a>
+    </div>
+    <div class="button-card">
+      <a href="#">Контакти</a>
+    </div>
   </div>
 </body>
 </html>
